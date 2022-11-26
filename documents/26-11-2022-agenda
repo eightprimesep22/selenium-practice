@@ -1,0 +1,50 @@
+Today's 26/11/2022
+1. xpath options -Chained
+2. CSS Selector
+3. Xpath axis
+	Self
+	Parent
+	Child
+	Ancestor
+	Descendant
+	Following
+	Following-sibling
+	Preceding
+	Preceding-sibling
+
+4. Building Utility class
+
+5. Alert Interface
+	2.1 switchTo().alert()
+	2.2 accept()
+	2.3 dismiss()
+	2.4 alert().getText()
+	2.5 alert().sendKeys()
+
+6. Select Class
+	3.1 selectByValue()
+	3.2 selectByVisibleText()
+	3.3 selectByIndex()
+	3.4 getOptions()
+7. Working With List of element
+
+8. SwitchToWindowAndIframe
+	4.1 getWindowHandle()
+	4.2 getWindowHandles()
+	4.3 switchTo().window()
+	4.4 switchTo().frame()
+	4.5 defaultContent()
+
+9. Action Class (How to perform  Mouse Operations in Selenium WebDriver?)
+    5.1 Drag And Drop
+    5.2 Mouse Hover
+    5.3 Right Click
+    5.4 Slider
+    5.5 Key Board Events
+
+10. Selenium Waits
+    6.1 Implicitly Wait
+    6.2 Explicit Wait
+    6.3 Fluent Wait
+
+11. How To Handle DatePicker in Selenium?

@@ -39,6 +39,9 @@ public class LocatorDemo4 extends BaseTest {
         // xpath with text()
         driver.findElement(By.xpath("//a[text() = 'Log in']")).click();
 
+        // xpath with chained
+        driver.findElement(By.xpath("//ul[@class='top-menu notmobile']//a[text()='Computers ']")).click();
+
     }
 
     @After
