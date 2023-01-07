@@ -64,6 +64,13 @@ public class LoginTest extends Utility {
        /* WebElement loginButton = driver.findElement(By.xpath("//button[contains(text(),'Log in')]"));
         loginButton.click();*/
         clickOnElement(By.xpath("//button[contains(text(),'Log in')]"));
+        String expectedErrorMessage = "Login was unsuccessful. Please correct the errors and try again.\n"
+                + "No customer account found";
+//        String actualErrorMessage = driver.findElement(By.xpath("//div[@class='message-error validation-summary-errors']")).getText();
+        String actualErrorMessage = getTextFromElement(By.xpath("//div[@class='message-error validation-summary-errors']"));
+
+        // Validate actual and expected message
+        Assert.assertEquals("Error message not displayed", expectedErrorMessage, actualErrorMessage);
     }
 
     @After

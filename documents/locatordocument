@@ -36,3 +36,10 @@ contains()
 starts-with()
 text()
 chained xpath
+
+Relative Locators
+above
+below
+near
+toRightOf
+toLeftOf

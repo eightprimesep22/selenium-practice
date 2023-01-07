@@ -1,0 +1,36 @@
+1. What is Synchronization Problem in Selenium?
+2. What are the different types of waits available in selenium webdriver?
+
+Thread.sleep(MS)
+
+1. Implecit Wait
+2. Explicit Wait
+3. Fluent Wait
+
+Implecit Wait (Only use once)
+
+driver.manage().timeouts().implicitelywait(time)
+
+Explicit Wait (Specific to Element)
+
+WebDriverWait myWait = new WebDriverWait(driver, time);
+
+ WebElement element = myWait.unit(ExpectedConditions.visibilityofElementLocated(By.id("login")));
+ element.click.
+
+Fluent Wait
+	Also similar to WebDriverWait with one more flexibility in polling time and ignoring exceptions.
+Copied from Selenium.dev
+// Waiting 30 seconds for an element to be present on the page, checking
+// for its presence once every 5 seconds.
+
+Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+  .withTimeout(Duration.ofSeconds(30))
+  .pollingEvery(Duration.ofSeconds(5))
+  .ignoring(NoSuchElementException.class);
+
+WebElement foo = wait.until(new Function<WebDriver, WebElement>() {
+  public WebElement apply(WebDriver driver) {
+    return driver.findElement(By.id("foo"));
+  }
+});
